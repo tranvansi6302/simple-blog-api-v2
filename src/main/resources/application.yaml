@@ -1,0 +1,25 @@
+sever:
+  port: 8080
+  servlet:
+    context-path: /simple-blog-api-v2
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: "jdbc:mysql://localhost:3307/simple_blog_api"
+    username: "tranvansi"
+    password: "tranvansi"
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  signerKey: "smw7Q3N/Y0qQs0VGN9ASFEy3NwcPcPVZpVe6jg7trzxs+plOseiYEWQAZt4VbPxC"
+
+springdoc:
+  api-docs:
+    path: /simple-blog-api-v2/api-docs
+  swagger-ui:
+    path: /simple-blog-api-v2/swagger-ui.html
+  show-actuator: true

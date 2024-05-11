@@ -1,0 +1,25 @@
+sever:
+  port:
+  servlet:
+    context-path: /simple-blog-api-v2
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: "jdbc:mysql://localhost:3307/simple_blog_api_v2"
+    username:
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  signerKey: "smw7Q3N/Y0qQs0VGN9ASFEy3NwcPcPVZpVe6jg7trzxs+plOseiYEWQAZt4VbPxC"
+
+springdoc:
+  api-docs:
+    path:
+  swagger-ui:
+    path:
+  show-actuator: true
